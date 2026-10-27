@@ -1,0 +1,314 @@
+{
+  "_note": "Keys are the ballot letters (אותיות הפתק) exactly as they appear as column headers in the CEC CSV files. Sources: Wikipedia (en/he) 2026 Israeli legislative election, checked 2026-10-27. 'seats2022' = seats the same list / its main component won in the 25th Knesset (null = new list). Minor-list Hebrew names are translations of the English Wikipedia names and may differ slightly from the official ballot wording; letters without an entry are shown as \"רשימה <letters>\".",
+  "blocs": {
+    "coalition": {
+      "he": "גוש הקואליציה היוצאת",
+      "en": "Outgoing coalition bloc",
+      "color": "#3B82F6"
+    },
+    "opposition": {
+      "he": "גוש האופוזיציה",
+      "en": "Opposition bloc",
+      "color": "#A855F7"
+    },
+    "arab": {
+      "he": "המפלגות הערביות",
+      "en": "Arab parties",
+      "color": "#10B981"
+    },
+    "other": {
+      "he": "אחרות",
+      "en": "Other",
+      "color": "#64748B"
+    }
+  },
+  "parties": {
+    "מחל": {
+      "he": "הליכוד",
+      "en": "Likud",
+      "leaderHe": "בנימין נתניהו",
+      "leaderEn": "Benjamin Netanyahu",
+      "color": "#2563EB",
+      "bloc": "coalition",
+      "seats2022": 32
+    },
+    "דרך": {
+      "he": "ישר!",
+      "en": "Yashar",
+      "leaderHe": "גדי איזנקוט",
+      "leaderEn": "Gadi Eisenkot",
+      "color": "#A855F7",
+      "bloc": "opposition",
+      "seats2022": null
+    },
+    "רק": {
+      "he": "ביחד",
+      "en": "Together",
+      "leaderHe": "נפתלי בנט",
+      "leaderEn": "Naftali Bennett",
+      "color": "#0EA5E9",
+      "bloc": "opposition",
+      "seats2022": null
+    },
+    "אמת": {
+      "he": "הדמוקרטים",
+      "en": "The Democrats",
+      "leaderHe": "יאיר גולן",
+      "leaderEn": "Yair Golan",
+      "color": "#EF4444",
+      "bloc": "opposition",
+      "seats2022": 4
+    },
+    "שס": {
+      "he": "ש״ס",
+      "en": "Shas",
+      "leaderHe": "אריה דרעי",
+      "leaderEn": "Aryeh Deri",
+      "color": "#14B8A6",
+      "bloc": "coalition",
+      "seats2022": 11
+    },
+    "ג": {
+      "he": "יהדות התורה",
+      "en": "United Torah Judaism",
+      "leaderHe": "",
+      "leaderEn": "",
+      "color": "#94A3B8",
+      "bloc": "coalition",
+      "seats2022": 7
+    },
+    "ב": {
+      "he": "עוצמה יהודית",
+      "en": "Otzma Yehudit",
+      "leaderHe": "איתמר בן גביר",
+      "leaderEn": "Itamar Ben-Gvir",
+      "color": "#F97316",
+      "bloc": "coalition",
+      "seats2022": 6
+    },
+    "ט": {
+      "he": "הציונות הדתית – זהות",
+      "en": "Religious Zionism – Zehut",
+      "leaderHe": "בצלאל סמוטריץ׳",
+      "leaderEn": "Bezalel Smotrich",
+      "color": "#F59E0B",
+      "bloc": "coalition",
+      "seats2022": 7
+    },
+    "ל": {
+      "he": "ישראל ביתנו",
+      "en": "Yisrael Beiteinu",
+      "leaderHe": "אביגדור ליברמן",
+      "leaderEn": "Avigdor Liberman",
+      "color": "#6366F1",
+      "bloc": "opposition",
+      "seats2022": 6
+    },
+    "ודם": {
+      "he": "הרשימה המשותפת",
+      "en": "Joint List",
+      "leaderHe": "יוסף ג׳בארין",
+      "leaderEn": "Yousef Jabareen",
+      "color": "#DB2777",
+      "bloc": "arab",
+      "seats2022": 5
+    },
+    "עם": {
+      "he": "רע״מ",
+      "en": "Ra'am",
+      "leaderHe": "מנסור עבאס",
+      "leaderEn": "Mansour Abbas",
+      "color": "#16A34A",
+      "bloc": "arab",
+      "seats2022": 5
+    },
+    "ני": {
+      "he": "נעם",
+      "en": "Noam",
+      "leaderHe": "אבי מעוז",
+      "leaderEn": "Avi Maoz",
+      "color": "#B45309",
+      "bloc": "coalition",
+      "seats2022": 1
+    },
+    "די": {
+      "he": "המילואימניקים והמפלגה הכלכלית",
+      "en": "The Reservists & Economic Party",
+      "leaderHe": "יועז הנדל",
+      "leaderEn": "Yoaz Hendel",
+      "color": "#84CC16",
+      "bloc": "opposition",
+      "seats2022": null
+    },
+    "ך": {
+      "he": "עמך ישראל",
+      "en": "Amcha Yisrael",
+      "leaderHe": "עופר וינטר",
+      "leaderEn": "Ofer Winter",
+      "color": "#EAB308",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "זך": {
+      "he": "הציבור החרדי",
+      "en": "Haredi Public",
+      "color": "#78716C",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "צף": {
+      "he": "הפיראטים",
+      "en": "Pirate Party",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "בי": {
+      "he": "צומת – בית ישראל",
+      "en": "Tzomet – Beit Yisrael",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "קך": {
+      "he": "סדר חדש",
+      "en": "New Order",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "יק": {
+      "he": "גוש התנ״ך",
+      "en": "The Bible Bloc",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "פה": {
+      "he": "אני ואתה",
+      "en": "Ani VeAta",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "קה": {
+      "he": "קול הנשים",
+      "en": "Women's Voice",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "י": {
+      "he": "ישראל תחילה",
+      "en": "Israel First",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "זץ": {
+      "he": "ברית עולם",
+      "en": "Eternal Covenant",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "נקי": {
+      "he": "לתיקון שיטת הבחירות והממשל",
+      "en": "Fixing the Electoral System",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "נץ": {
+      "he": "ביטחון אישי",
+      "en": "Personal Security",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "ז": {
+      "he": "ביטחון סוציאלי",
+      "en": "Social Security",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "כן": {
+      "he": "כחול לבן (פרשה)",
+      "en": "Blue and White (withdrew)",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "בד": {
+      "he": "יחד נצליח",
+      "en": "Together We Will Succeed",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "בקר": {
+      "he": "אור השחר",
+      "en": "Dawn's Light",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "ד": {
+      "he": "שותפות לכולם",
+      "en": "Partnership for Everyone",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "ה": {
+      "he": "גן עדן",
+      "en": "Garden of Eden",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "נף": {
+      "he": "שמע",
+      "en": "Shema",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "נר": {
+      "he": "הצבע השחור",
+      "en": "The Color Black",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "צדק": {
+      "he": "שרשר",
+      "en": "Sharshar",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "ק": {
+      "he": "גאולה",
+      "en": "Redemption",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "קץ": {
+      "he": "חוק צודק",
+      "en": "Just Law",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    },
+    "רץ": {
+      "he": "הקהל",
+      "en": "Hakahal Party",
+      "color": "#64748B",
+      "bloc": "other",
+      "seats2022": null
+    }
+  }
+}

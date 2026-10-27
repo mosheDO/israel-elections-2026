@@ -1,0 +1,15 @@
+{
+  "name": "israel-elections-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Live 26th Knesset election results — Hebrew & English",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fetch": "node scripts/fetch-results.mjs",
+    "watch": "node scripts/fetch-results.mjs --watch 60 --push",
+    "demo": "node scripts/fetch-results.mjs --demo",
+    "test": "node scripts/seats.mjs --test && node scripts/test-parse.mjs",
+    "start": "npx --yes serve@14.2.4 site -l 8080"
+  }
+}

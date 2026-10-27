@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>בחירות 2026 · Israel Elections 2026</title>
+  <meta name="description" content="תוצאות הבחירות לכנסת ה-26 בזמן אמת · Live results of the 2026 Israeli Knesset election">
+  <meta name="theme-color" content="#070B18">
+  <meta property="og:title" content="בחירות 2026 · Israel Elections 2026">
+  <meta property="og:description" content="תוצאות הבחירות לכנסת ה-26 בזמן אמת · Live 26th Knesset results">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M3 26a13 13 0 0 1 26 0' fill='none' stroke='%233B82F6' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='26' r='3' fill='%23A855F7'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply saved theme/language before first paint to avoid a flash.
+    try {
+      const t = localStorage.getItem('theme');
+      document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      const l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang');
+      if (l === 'en') { document.documentElement.lang = 'en'; document.documentElement.dir = 'ltr'; }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="grid"></span></div>
+
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="./" aria-label="home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <defs><linearGradient id="bm" x1="0" x2="1"><stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs>
+          <path d="M5 31a15 15 0 0 1 30 0" fill="none" stroke="url(#bm)" stroke-width="5" stroke-linecap="round"/>
+          <path d="M12 31a8 8 0 0 1 16 0" fill="none" stroke="url(#bm)" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+          <circle cx="20" cy="31" r="2.6" fill="#fff"/>
+        </svg>
+        <span class="brand-text"><strong data-t="title"></strong><small data-t="subtitle"></small></span>
+      </a>
+      <div class="actions">
+        <button class="btn ghost" id="themeBtn" type="button"><span class="ico" id="themeIco"></span><span class="sr" id="themeLabel"></span></button>
+        <button class="btn pill" id="langBtn" type="button" data-t="langSwitch"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="hero" aria-live="polite">
+      <div class="status" id="status"><span class="dot"></span><span id="statusText" data-t="loading"></span></div>
+      <h1 class="hero-title"><span data-t="subtitle"></span></h1>
+      <p class="hero-meta" id="heroMeta"></p>
+      <div class="banner" id="banner" hidden></div>
+    </section>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="grid-2">
+      <article class="card knesset">
+        <header class="card-h">
+          <div><h2 data-t="knesset"></h2><p data-t="knessetHint"></p></div>
+          <span class="chip" data-t="majority"></span>
+        </header>
+        <div class="hemi-wrap">
+          <svg id="hemi" viewBox="0 0 400 214" role="img" aria-labelledby="hemiTitle"><title id="hemiTitle"></title></svg>
+          <div class="hemi-center" id="hemiCenter"></div>
+          <div class="tooltip" id="tip" hidden></div>
+        </div>
+        <div class="legend" id="legend"></div>
+      </article>
+
+      <article class="card blocs">
+        <header class="card-h"><div><h2 data-t="blocs"></h2></div></header>
+        <div id="blocs"></div>
+        <div class="surplus" id="surplus"></div>
+      </article>
+    </section>
+
+    <section class="card">
+      <header class="card-h"><div><h2 data-t="parties"></h2><p data-t="partiesHint"></p></div></header>
+      <div class="parties" id="parties"></div>
+      <button class="btn link" id="belowBtn" type="button"></button>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <header class="card-h">
+          <div><h2 data-t="coalition"></h2><p data-t="coalitionHint"></p></div>
+          <button class="btn ghost sm" id="clearCoal" type="button" data-t="clear"></button>
+        </header>
+        <div class="coal-meter" id="coalMeter"></div>
+        <div class="presets" id="presets"></div>
+        <div class="coal-chips" id="coalChips"></div>
+      </article>
+
+      <article class="card" id="progressCard">
+        <header class="card-h"><div><h2 data-t="progress"></h2><p data-t="progressHint"></p></div></header>
+        <div class="chart" id="chart"></div>
+      </article>
+    </section>
+
+    <section class="card">
+      <header class="card-h">
+        <div><h2 data-t="localities"></h2><p data-t="localitiesHint"></p></div>
+        <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="locSearch" type="search" autocomplete="off"></label>
+      </header>
+      <div class="loc" id="loc"></div>
+      <button class="btn link" id="locMore" type="button" data-t="showMore" hidden></button>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p><span data-t="source"></span> · <a id="srcLink" target="_blank" rel="noopener" data-t="sourceLink"></a></p>
+    <p class="muted" data-t="disclaimer"></p>
+    <p class="muted"><a href="https://github.com/amiram/Elections" target="_blank" rel="noopener" data-t="credit"></a></p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

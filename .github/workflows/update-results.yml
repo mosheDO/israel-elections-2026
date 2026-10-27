@@ -1,0 +1,79 @@
+name: Update results & deploy
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'        # GitHub runs this every 5–15 minutes in practice
+  workflow_dispatch:
+    inputs:
+      loop_minutes:
+        description: 'Keep polling for N minutes (election night: e.g. 50)'
+        default: '0'
+      final:
+        description: 'Mark the results as final'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ['site/**', 'raw/**', 'config/**', 'scripts/**']
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: results
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      changed: ${{ steps.fetch.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Skip when results are final
+        id: gate
+        run: |
+          # Pushes (code changes, or data pushed by a local runner) only redeploy.
+          if [ "${{ github.event_name }}" = "push" ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "${{ github.event_name }}" = "schedule" ] && grep -q '"status": "final"' site/data/results.json 2>/dev/null; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch results from the Central Elections Committee
+        id: fetch
+        if: steps.gate.outputs.skip != 'true'
+        run: |
+          git config user.name  "election-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          LOOP="${{ github.event.inputs.loop_minutes || '0' }}"
+          # Scheduled runs poll for ~4 minutes so updates arrive every minute or so.
+          if [ "${{ github.event_name }}" = "schedule" ]; then LOOP=4; fi
+          ARGS="--push"
+          if [ "$LOOP" != "0" ]; then ARGS="$ARGS --watch 60 --duration $LOOP"; fi
+          if [ "${{ github.event.inputs.final }}" = "true" ]; then ARGS="$ARGS --final"; fi
+          node scripts/fetch-results.mjs $ARGS
+
+  deploy:
+    needs: update
+    if: always() && (needs.update.outputs.changed == 'true' || github.event_name != 'schedule')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

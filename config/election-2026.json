@@ -1,0 +1,28 @@
+{
+  "_note": "Sources are tried in order. A source may be an https URL or a repo-relative path (drop a CSV downloaded from the CEC into raw/ and push — the workflow will use it if the URLs are blocked).",
+  "electionDate": "2026-10-27",
+  "pollsClose": "2026-10-27T22:00:00+02:00",
+  "threshold": 0.0325,
+  "seats": 120,
+  "officialSite": "https://votes26.bechirot.gov.il/",
+  "sources": {
+    "localities": [
+      "https://media26.bechirot.gov.il/files/expc.csv",
+      "https://votes26.bechirot.gov.il/files/expc.csv",
+      "raw/expc.csv"
+    ],
+    "ballots": [
+      "https://media26.bechirot.gov.il/files/expb.csv",
+      "https://votes26.bechirot.gov.il/files/expb.csv",
+      "raw/expb.csv"
+    ]
+  },
+  "surplusAgreements": [
+    ["רק", "ל"],
+    ["דרך", "אמת"],
+    ["ודם", "עם"],
+    ["מחל", "ט"],
+    ["שס", "ג"],
+    ["זץ", "נקי"]
+  ]
+}

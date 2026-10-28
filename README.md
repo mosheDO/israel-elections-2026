@@ -35,7 +35,7 @@ The seat calculation is ported from [amiram/Elections](https://github.com/amiram
 ### בליל הבחירות
 > ⚠️ **ועדת הבחירות חוסמת גישה מחוץ לישראל, כולל שרתי GitHub.** הדרך האמינה היא להריץ מהמחשב שלכם בישראל: `npm run watch`. ה-workflow בענן הוא גיבוי בלבד.
 
-- הריצה המתוזמנת פועלת בכל 5 עד 15 דקות. לעדכון רציף אפשר להריץ ידנית את ה-workflow עם `loop_minutes = 55`, וכך הוא בודק כל דקה במשך כמעט שעה.
+- אין ריצה מתוזמנת בענן. העדכונים מגיעים מ-`npm run watch`, וכל push מעלה מחדש את האתר תוך 1–2 דקות.
 - **אם ועדת הבחירות חוסמת את שרתי GitHub** (הם בארה״ב), הריצו מהמחשב שלכם בישראל:
   ```bash
   node scripts/fetch-results.mjs --watch 60 --push
@@ -58,7 +58,7 @@ The seat calculation is ported from [amiram/Elections](https://github.com/amiram
 ### Election night
 > ⚠️ **The Elections Committee blocks requests from outside Israel, including GitHub's runners** (confirmed on 2026-10-28). The reliable path is `npm run watch` on a machine in Israel. The cloud workflow is only a backup.
 
-- The scheduled run fires every 5–15 minutes and polls for about 4 minutes each time. For continuous updates, run the workflow manually with `loop_minutes = 55`.
+- There is no scheduled cloud run. Updates come from `npm run watch`, and every push redeploys the site within 1–2 minutes.
 - **If the committee blocks GitHub's US runners**, run the fetcher from a machine in Israel: `node scripts/fetch-results.mjs --watch 60 --push`.
 - Manual fallback: drop `expc.csv` / `expb.csv` from the committee site into `raw/` and push.
 - When counting ends: run the workflow with `final` checked, or `node scripts/fetch-results.mjs --final --push`.

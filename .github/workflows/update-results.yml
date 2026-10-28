@@ -1,8 +1,8 @@
 name: Update results & deploy
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'        # GitHub runs this every 5–15 minutes in practice
+  # No schedule: the Elections Committee blocks GitHub's US runners, so results are fetched
+  # from a machine in Israel (npm run watch) and every push redeploys the site.
   workflow_dispatch:
     inputs:
       loop_minutes:
@@ -37,14 +37,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Skip when results are final
+      - name: Skip fetch on push
         id: gate
         run: |
           # Pushes (code changes, or data pushed by a local runner) only redeploy.
           if [ "${{ github.event_name }}" = "push" ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0; fi
-          if [ "${{ github.event_name }}" = "schedule" ] && grep -q '"status": "final"' site/data/results.json 2>/dev/null; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-          fi
 
       - name: Fetch results from the Central Elections Committee
         id: fetch
@@ -53,8 +50,6 @@ jobs:
           git config user.name  "election-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           LOOP="${{ github.event.inputs.loop_minutes || '0' }}"
-          # Scheduled runs poll for ~4 minutes so updates arrive every minute or so.
-          if [ "${{ github.event_name }}" = "schedule" ]; then LOOP=4; fi
           ARGS="--push"
           if [ "$LOOP" != "0" ]; then ARGS="$ARGS --watch 60 --duration $LOOP"; fi
           if [ "${{ github.event.inputs.final }}" = "true" ]; then ARGS="$ARGS --final"; fi
@@ -62,7 +57,7 @@ jobs:
 
   deploy:
     needs: update
-    if: always() && (needs.update.outputs.changed == 'true' || github.event_name != 'schedule')
+    if: always()
     runs-on: ubuntu-latest
     environment:
       name: github-pages

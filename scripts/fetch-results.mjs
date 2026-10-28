@@ -291,6 +291,9 @@ async function runOnce() {
   const final = flag('final');
 
   if (!loc && !bal) {
+    if (process.env.GITHUB_ACTIONS && Date.now() > new Date(config.pollsClose).getTime()) {
+      console.log('::warning::Could not download the Elections Committee files from this runner (likely geo-blocked outside Israel). Run "npm run watch" from a machine in Israel.');
+    }
     if (final && prev && prev.status !== 'waiting') {
       prev.status = 'final';
       await writeFile(path.join(DATA, 'results.json'), JSON.stringify(prev, null, 1));

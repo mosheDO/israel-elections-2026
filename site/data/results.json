@@ -17,8 +17,8 @@
   "invalid": 15545,
   "valid": 3413319,
   "localities": 915,
-  "ballotBoxes": 7961,
-  "ballotBoxesReported": 7961,
+  "ballotBoxes": 8702,
+  "ballotBoxesReported": 8702,
   "turnout": 0.7103340193883925
  },
  "thresholdVotes": 110933,
@@ -689,6 +689,6 @@
    "נקי"
   ]
  ],
- "sourceHash": "a41782df8bba",
- "updatedAt": "2026-10-28T07:53:09.034Z"
+ "sourceHash": "7cb2f75b3f8d",
+ "updatedAt": "2026-10-28T08:02:18.422Z"
 }

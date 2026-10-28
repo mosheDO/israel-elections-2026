@@ -1,5 +1,5 @@
 {
- "status": "stale",
+ "status": "live",
  "election": {
   "date": "2026-10-27",
   "pollsClose": "2026-10-27T22:00:00+02:00",
@@ -8,8 +8,7 @@
   "officialSite": "https://votes26.bechirot.gov.il/"
  },
  "source": [
-  "https://media26.bechirot.gov.il/files/expc.csv",
-  "https://media26.bechirot.gov.il/files/expb.csv"
+  "https://media26.bechirot.gov.il/files/expc.csv"
  ],
  "totals": {
   "eligible": 3007427,
@@ -17,8 +16,8 @@
   "invalid": 9804,
   "valid": 2122846,
   "localities": 748,
-  "ballotBoxes": 5037,
-  "ballotBoxesReported": 5037,
+  "ballotBoxes": 0,
+  "ballotBoxesReported": 0,
   "turnout": 0.70912776935234
  },
  "thresholdVotes": 68993,
@@ -689,6 +688,6 @@
    "נקי"
   ]
  ],
- "sourceHash": "0f43cb4be59a",
- "updatedAt": "2026-10-28T04:08:41.904Z"
+ "sourceHash": "55231b3a33d1",
+ "updatedAt": "2026-10-28T04:35:01.001Z"
 }

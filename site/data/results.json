@@ -11,17 +11,17 @@
   "https://media26.bechirot.gov.il/files/expb.csv"
  ],
  "totals": {
-  "eligible": 2527559,
-  "voters": 1774362,
-  "invalid": 8164,
-  "valid": 1766198,
-  "localities": 665,
-  "ballotBoxes": 4274,
-  "ballotBoxesReported": 4274,
-  "turnout": 0.7020061648412559
+  "eligible": 3007427,
+  "voters": 2132650,
+  "invalid": 9804,
+  "valid": 2122846,
+  "localities": 748,
+  "ballotBoxes": 5037,
+  "ballotBoxesReported": 5037,
+  "turnout": 0.70912776935234
  },
- "thresholdVotes": 57402,
- "measure": 13889,
+ "thresholdVotes": 68993,
+ "measure": 16706,
  "parties": [
   {
    "id": "מחל",
@@ -32,12 +32,12 @@
    "color": "#2563EB",
    "bloc": "coalition",
    "seats2022": 32,
-   "votes": 388865,
-   "pct": 0.22017067169139587,
-   "seats": 29,
+   "votes": 460565,
+   "pct": 0.21695638779261425,
+   "seats": 28,
    "passed": true,
-   "toGain": 15855,
-   "toLose": 800
+   "toGain": 12033,
+   "toLose": 7721
   },
   {
    "id": "דרך",
@@ -48,12 +48,12 @@
    "color": "#A855F7",
    "bloc": "opposition",
    "seats2022": null,
-   "votes": 273048,
-   "pct": 0.15459648351996774,
-   "seats": 20,
+   "votes": 333786,
+   "pct": 0.15723514564881297,
+   "seats": 21,
    "passed": true,
-   "toGain": 2628,
-   "toLose": 11532
+   "toGain": 16006,
+   "toLose": 3072
   },
   {
    "id": "ודם",
@@ -64,12 +64,12 @@
    "color": "#DB2777",
    "bloc": "arab",
    "seats2022": 5,
-   "votes": 151337,
-   "pct": 0.08568518365438077,
-   "seats": 11,
+   "votes": 195808,
+   "pct": 0.09223843839826347,
+   "seats": 12,
    "passed": true,
-   "toGain": 5304,
-   "toLose": 7750
+   "toGain": 14517,
+   "toLose": 1663
   },
   {
    "id": "רק",
@@ -80,12 +80,12 @@
    "color": "#0EA5E9",
    "bloc": "opposition",
    "seats2022": null,
-   "votes": 146387,
-   "pct": 0.08288255337170577,
+   "votes": 177904,
+   "pct": 0.0838044775739738,
    "seats": 11,
    "passed": true,
-   "toGain": 12382,
-   "toLose": 1600
+   "toGain": 16636,
+   "toLose": 1835
   },
   {
    "id": "ג",
@@ -96,12 +96,12 @@
    "color": "#94A3B8",
    "bloc": "coalition",
    "seats2022": 7,
-   "votes": 118588,
-   "pct": 0.06714309494179022,
-   "seats": 9,
+   "votes": 136365,
+   "pct": 0.06423687822856675,
+   "seats": 8,
    "passed": true,
-   "toGain": 9630,
-   "toLose": 3499
+   "toGain": 5204,
+   "toLose": 12619
   },
   {
    "id": "ל",
@@ -112,28 +112,12 @@
    "color": "#6366F1",
    "bloc": "opposition",
    "seats2022": 6,
-   "votes": 112430,
-   "pct": 0.06365650963255536,
+   "votes": 133186,
+   "pct": 0.06273936027389646,
    "seats": 8,
    "passed": true,
-   "toGain": 7342,
-   "toLose": 5967
-  },
-  {
-   "id": "ב",
-   "he": "עוצמה יהודית",
-   "en": "Otzma Yehudit",
-   "leaderHe": "איתמר בן גביר",
-   "leaderEn": "Itamar Ben-Gvir",
-   "color": "#F97316",
-   "bloc": "coalition",
-   "seats2022": 6,
-   "votes": 105158,
-   "pct": 0.05953919096273464,
-   "seats": 7,
-   "passed": true,
-   "toGain": 3322,
-   "toLose": 10394
+   "toGain": 12372,
+   "toLose": 3802
   },
   {
    "id": "אמת",
@@ -144,12 +128,28 @@
    "color": "#EF4444",
    "bloc": "opposition",
    "seats2022": 4,
-   "votes": 104003,
-   "pct": 0.05888524389677714,
+   "votes": 125030,
+   "pct": 0.058897348182581306,
    "seats": 7,
    "passed": true,
-   "toGain": 2628,
-   "toLose": 11532
+   "toGain": 2127,
+   "toLose": 13768
+  },
+  {
+   "id": "ב",
+   "he": "עוצמה יהודית",
+   "en": "Otzma Yehudit",
+   "leaderHe": "איתמר בן גביר",
+   "leaderEn": "Itamar Ben-Gvir",
+   "color": "#F97316",
+   "bloc": "coalition",
+   "seats2022": 6,
+   "votes": 124001,
+   "pct": 0.058412621546734905,
+   "seats": 7,
+   "passed": true,
+   "toGain": 6985,
+   "toLose": 10065
   },
   {
    "id": "שס",
@@ -160,12 +160,12 @@
    "color": "#14B8A6",
    "bloc": "coalition",
    "seats2022": 11,
-   "votes": 102302,
-   "pct": 0.05792215821782156,
+   "votes": 120402,
+   "pct": 0.056717255985596696,
    "seats": 7,
    "passed": true,
-   "toGain": 3110,
-   "toLose": 10067
+   "toGain": 5204,
+   "toLose": 12619
   },
   {
    "id": "ט",
@@ -176,12 +176,12 @@
    "color": "#F59E0B",
    "bloc": "coalition",
    "seats2022": 7,
-   "votes": 99293,
-   "pct": 0.0562184987187167,
+   "votes": 116836,
+   "pct": 0.05503743559353811,
    "seats": 7,
    "passed": true,
-   "toGain": 7981,
-   "toLose": 5430
+   "toGain": 12033,
+   "toLose": 5666
   },
   {
    "id": "עם",
@@ -192,12 +192,12 @@
    "color": "#16A34A",
    "bloc": "arab",
    "seats2022": 5,
-   "votes": 65267,
-   "pct": 0.036953388011989594,
+   "votes": 80894,
+   "pct": 0.03810639113718094,
    "seats": 4,
    "passed": true,
-   "toGain": 356,
-   "toLose": 8130
+   "toGain": 693,
+   "toLose": 12302
   },
   {
    "id": "די",
@@ -208,11 +208,11 @@
    "color": "#84CC16",
    "bloc": "opposition",
    "seats2022": null,
-   "votes": 48012,
-   "pct": 0.02718381517813971,
+   "votes": 57666,
+   "pct": 0.02716447636804554,
    "seats": 0,
    "passed": false,
-   "toGain": 9705,
+   "toGain": 11707,
    "toLose": null
   },
   {
@@ -224,11 +224,11 @@
    "color": "#EAB308",
    "bloc": "other",
    "seats2022": null,
-   "votes": 31768,
-   "pct": 0.017986658347478594,
+   "votes": 37472,
+   "pct": 0.01765177502277603,
    "seats": 0,
    "passed": false,
-   "toGain": 26495,
+   "toGain": 32580,
    "toLose": null
   },
   {
@@ -240,11 +240,11 @@
    "color": "#78716C",
    "bloc": "other",
    "seats2022": null,
-   "votes": 4725,
-   "pct": 0.002675237997098853,
+   "votes": 5436,
+   "pct": 0.002560713306570519,
    "seats": 0,
    "passed": false,
-   "toGain": 54446,
+   "toGain": 65692,
    "toLose": null
   },
   {
@@ -256,11 +256,11 @@
    "color": "#B45309",
    "bloc": "coalition",
    "seats2022": 1,
-   "votes": 3515,
-   "pct": 0.001990150594667189,
+   "votes": 4057,
+   "pct": 0.0019111136653341787,
    "seats": 0,
    "passed": false,
-   "toGain": 55697,
+   "toGain": 67117,
    "toLose": null
   },
   {
@@ -272,11 +272,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 3305,
-   "pct": 0.0018712511281294623,
+   "votes": 3777,
+   "pct": 0.0017792152610222314,
    "seats": 0,
    "passed": false,
-   "toGain": 55914,
+   "toGain": 67407,
    "toLose": null
   },
   {
@@ -288,11 +288,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 2139,
-   "pct": 0.0012110759948771315,
+   "votes": 2499,
+   "pct": 0.0011771932584841293,
    "seats": 0,
    "passed": false,
-   "toGain": 57119,
+   "toGain": 68728,
    "toLose": null
   },
   {
@@ -304,11 +304,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 1264,
-   "pct": 0.0007156615509699366,
+   "votes": 1573,
+   "pct": 0.0007409863927953323,
    "seats": 0,
    "passed": false,
-   "toGain": 58024,
+   "toGain": 69685,
    "toLose": null
   },
   {
@@ -320,11 +320,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 628,
-   "pct": 0.0003555660237413925,
+   "votes": 757,
+   "pct": 0.00035659675737194314,
    "seats": 0,
    "passed": false,
-   "toGain": 58681,
+   "toGain": 70528,
    "toLose": null
   },
   {
@@ -336,43 +336,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 441,
-   "pct": 0.0002496888797292263,
+   "votes": 530,
+   "pct": 0.00024966483673332876,
    "seats": 0,
    "passed": false,
-   "toGain": 58874,
-   "toLose": null
-  },
-  {
-   "id": "רץ",
-   "he": "הקהל",
-   "en": "Hakahal Party",
-   "leaderHe": "",
-   "leaderEn": "",
-   "color": "#64748B",
-   "bloc": "other",
-   "seats2022": null,
-   "votes": 399,
-   "pct": 0.00022590898642168092,
-   "seats": 0,
-   "passed": false,
-   "toGain": 58918,
-   "toLose": null
-  },
-  {
-   "id": "נקי",
-   "he": "לתיקון שיטת הבחירות והממשל",
-   "en": "Fixing the Electoral System",
-   "leaderHe": "",
-   "leaderEn": "",
-   "color": "#64748B",
-   "bloc": "other",
-   "seats2022": null,
-   "votes": 395,
-   "pct": 0.00022364423467810518,
-   "seats": 0,
-   "passed": false,
-   "toGain": 58922,
+   "toGain": 70763,
    "toLose": null
   },
   {
@@ -384,27 +352,43 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 366,
-   "pct": 0.000207224784537181,
+   "votes": 474,
+   "pct": 0.0002232851558709393,
    "seats": 0,
    "passed": false,
-   "toGain": 58952,
+   "toGain": 70821,
    "toLose": null
   },
   {
-   "id": "פה",
-   "he": "אני ואתה",
-   "en": "Ani VeAta",
+   "id": "נקי",
+   "he": "לתיקון שיטת הבחירות והממשל",
+   "en": "Fixing the Electoral System",
    "leaderHe": "",
    "leaderEn": "",
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 296,
-   "pct": 0.0001675916290246054,
+   "votes": 447,
+   "pct": 0.0002105663811694301,
    "seats": 0,
    "passed": false,
-   "toGain": 59024,
+   "toGain": 70849,
+   "toLose": null
+  },
+  {
+   "id": "רץ",
+   "he": "הקהל",
+   "en": "Hakahal Party",
+   "leaderHe": "",
+   "leaderEn": "",
+   "color": "#64748B",
+   "bloc": "other",
+   "seats2022": null,
+   "votes": 424,
+   "pct": 0.000199731869386663,
+   "seats": 0,
+   "passed": false,
+   "toGain": 70872,
    "toLose": null
   },
   {
@@ -416,11 +400,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 289,
-   "pct": 0.00016362831347334784,
+   "votes": 329,
+   "pct": 0.00015498062506653804,
    "seats": 0,
    "passed": false,
-   "toGain": 59031,
+   "toGain": 70971,
    "toLose": null
   },
   {
@@ -432,11 +416,27 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 273,
-   "pct": 0.00015456930649904483,
+   "votes": 317,
+   "pct": 0.00014932783631031174,
    "seats": 0,
    "passed": false,
-   "toGain": 59048,
+   "toGain": 70983,
+   "toLose": null
+  },
+  {
+   "id": "פה",
+   "he": "אני ואתה",
+   "en": "Ani VeAta",
+   "leaderHe": "",
+   "leaderEn": "",
+   "color": "#64748B",
+   "bloc": "other",
+   "seats2022": null,
+   "votes": 314,
+   "pct": 0.00014791463912125515,
+   "seats": 0,
+   "passed": false,
+   "toGain": 70986,
    "toLose": null
   },
   {
@@ -448,11 +448,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 236,
-   "pct": 0.00013362035287096916,
+   "votes": 275,
+   "pct": 0.00012954307566351964,
    "seats": 0,
    "passed": false,
-   "toGain": 59086,
+   "toGain": 71026,
    "toLose": null
   },
   {
@@ -464,27 +464,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 219,
-   "pct": 0.00012399515796077224,
+   "votes": 271,
+   "pct": 0.00012765881274477754,
    "seats": 0,
    "passed": false,
-   "toGain": 59104,
-   "toLose": null
-  },
-  {
-   "id": "ה",
-   "he": "גן עדן",
-   "en": "Garden of Eden",
-   "leaderHe": "",
-   "leaderEn": "",
-   "color": "#64748B",
-   "bloc": "other",
-   "seats2022": null,
-   "votes": 212,
-   "pct": 0.00012003184240951468,
-   "seats": 0,
-   "passed": false,
-   "toGain": 59111,
+   "toGain": 71030,
    "toLose": null
   },
   {
@@ -496,11 +480,27 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 200,
-   "pct": 0.00011323758717878743,
+   "votes": 251,
+   "pct": 0.00011823749815106701,
    "seats": 0,
    "passed": false,
-   "toGain": 59123,
+   "toGain": 71051,
+   "toLose": null
+  },
+  {
+   "id": "ה",
+   "he": "גן עדן",
+   "en": "Garden of Eden",
+   "leaderHe": "",
+   "leaderEn": "",
+   "color": "#64748B",
+   "bloc": "other",
+   "seats2022": null,
+   "votes": 227,
+   "pct": 0.00010693192063861439,
+   "seats": 0,
+   "passed": false,
+   "toGain": 71076,
    "toLose": null
   },
   {
@@ -512,11 +512,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 170,
-   "pct": 0.00009625194910196931,
+   "votes": 195,
+   "pct": 0.00009185781728867756,
    "seats": 0,
    "passed": false,
-   "toGain": 59154,
+   "toGain": 71109,
    "toLose": null
   },
   {
@@ -528,11 +528,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 154,
-   "pct": 0.00008719294212766632,
+   "votes": 177,
+   "pct": 0.00008337863415433809,
    "seats": 0,
    "passed": false,
-   "toGain": 59171,
+   "toGain": 71128,
    "toLose": null
   },
   {
@@ -544,11 +544,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 145,
-   "pct": 0.00008209725070462089,
+   "votes": 169,
+   "pct": 0.00007961010831685388,
    "seats": 0,
    "passed": false,
-   "toGain": 59180,
+   "toGain": 71136,
    "toLose": null
   },
   {
@@ -560,11 +560,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 134,
-   "pct": 0.00007586918340978758,
+   "votes": 163,
+   "pct": 0.00007678371393874073,
    "seats": 0,
    "passed": false,
-   "toGain": 59192,
+   "toGain": 71142,
    "toLose": null
   },
   {
@@ -576,11 +576,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 134,
-   "pct": 0.00007586918340978758,
+   "votes": 155,
+   "pct": 0.00007301518810125653,
    "seats": 0,
    "passed": false,
-   "toGain": 59192,
+   "toGain": 71150,
    "toLose": null
   },
   {
@@ -592,11 +592,11 @@
    "color": "#64748B",
    "bloc": "other",
    "seats2022": null,
-   "votes": 80,
-   "pct": 0.00004529503487151497,
+   "votes": 93,
+   "pct": 0.00004380911286075391,
    "seats": 0,
    "passed": false,
-   "toGain": 59247,
+   "toGain": 71214,
    "toLose": null
   },
   {
@@ -609,10 +609,10 @@
    "bloc": "other",
    "seats2022": null,
    "votes": 18,
-   "pct": 0.000010191382846090868,
+   "pct": 0.000008479183134339466,
    "seats": 0,
    "passed": false,
-   "toGain": 59312,
+   "toGain": 71292,
    "toLose": null
   },
   {
@@ -625,10 +625,10 @@
    "bloc": "other",
    "seats2022": null,
    "votes": 3,
-   "pct": 0.0000016985638076818114,
+   "pct": 0.0000014131971890565777,
    "seats": 0,
    "passed": false,
-   "toGain": 59327,
+   "toGain": 71307,
    "toLose": null
   }
  ],
@@ -637,29 +637,29 @@
    "he": "גוש הקואליציה היוצאת",
    "en": "Outgoing coalition bloc",
    "color": "#3B82F6",
-   "seats": 59,
-   "votes": 817721
+   "seats": 57,
+   "votes": 962226
   },
   "opposition": {
    "he": "גוש האופוזיציה",
    "en": "Opposition bloc",
    "color": "#A855F7",
-   "seats": 46,
-   "votes": 683880
+   "seats": 47,
+   "votes": 827572
   },
   "arab": {
    "he": "המפלגות הערביות",
    "en": "Arab parties",
    "color": "#10B981",
-   "seats": 15,
-   "votes": 216604
+   "seats": 16,
+   "votes": 276702
   },
   "other": {
    "he": "אחרות",
    "en": "Other",
    "color": "#64748B",
    "seats": 0,
-   "votes": 47993
+   "votes": 56346
   }
  },
  "agreements": [
@@ -688,6 +688,6 @@
    "נקי"
   ]
  ],
- "sourceHash": "753430d279c8",
- "updatedAt": "2026-10-28T03:56:11.718Z"
+ "sourceHash": "78da5aa44598",
+ "updatedAt": "2026-10-28T03:58:30.695Z"
 }

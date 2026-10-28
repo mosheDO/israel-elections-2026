@@ -8,8 +8,7 @@
   "officialSite": "https://votes26.bechirot.gov.il/"
  },
  "source": [
-  "https://media26.bechirot.gov.il/files/expc.csv",
-  "https://media26.bechirot.gov.il/files/expb.csv"
+  "https://media26.bechirot.gov.il/files/expc.csv"
  ],
  "totals": {
   "eligible": 7035082,
@@ -17,8 +16,8 @@
   "invalid": 22322,
   "valid": 5024919,
   "localities": 1199,
-  "ballotBoxes": 11542,
-  "ballotBoxesReported": 11542,
+  "ballotBoxes": 0,
+  "ballotBoxesReported": 0,
   "turnout": 0.7174388301373033
  },
  "thresholdVotes": 163310,
@@ -689,6 +688,6 @@
    "נקי"
   ]
  ],
- "sourceHash": "1c037bc75acd",
- "updatedAt": "2026-10-28T19:08:03.852Z"
+ "sourceHash": "66db8ada36e9",
+ "updatedAt": "2026-10-28T19:19:13.189Z"
 }

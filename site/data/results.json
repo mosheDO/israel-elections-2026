@@ -8,7 +8,6 @@
   "officialSite": "https://votes26.bechirot.gov.il/"
  },
  "source": [
-  "https://media26.bechirot.gov.il/files/expc.csv",
   "https://media26.bechirot.gov.il/files/expb.csv"
  ],
  "totals": {
@@ -689,6 +688,6 @@
    "נקי"
   ]
  ],
- "sourceHash": "95dc3d95c160",
- "updatedAt": "2026-10-29T07:29:36.196Z"
+ "sourceHash": "3691da7227d3",
+ "updatedAt": "2026-10-29T07:32:51.591Z"
 }
